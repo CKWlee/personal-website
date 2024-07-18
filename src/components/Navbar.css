@@ -1,0 +1,17 @@
+.navbar-custom {
+    background-color: transparent;
+  }
+  
+  .nav-link {
+    color: black; /* Default color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .nav-link:hover {
+    color: purple; /* Color when hovered over */
+  }
+  
+  .active-link {
+    color: white; /* Color for active link */
+  }
+  

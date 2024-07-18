@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavigationBar from './components/Navbar';
+import Home from './components/Home';
+import Bio from './components/Bio';
+import Projects from './components/Projects';
+import RandomStuff from './components/RandomStuff';
+import Footer from './components/Footer'; // Import the Footer
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavigationBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/bio" element={<Bio />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/random" element={<RandomStuff />} />
+      </Routes>
+      <Footer /> {/* Add the Footer */}
+    </Router>
   );
 }
 

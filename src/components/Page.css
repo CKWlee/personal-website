@@ -1,0 +1,11 @@
+.page-content {
+    min-height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-center {
+    text-align: center;
+  }
+  
