@@ -1,6 +1,6 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import NavigationBar from './components/Navbar';
 import Home from './components/Home';
 import Bio from './components/Bio';
@@ -11,11 +11,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <Router basename="/personal-website">
+    <Router basename="/">
       <NavigationBar />
       <Routes>
-        <Route path="/" element={<Navigate to="/home" />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/bio" element={<Bio />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/random" element={<RandomStuff />} />
