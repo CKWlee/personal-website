@@ -6,8 +6,8 @@ const Home = () => {
     <div className="home-page">
       <Container className="d-flex align-items-center justify-content-center" style={{ minHeight: '80vh' }}>
         <div className="text-center">
-          <h1>Welcome to My Portfolio</h1>
-          <p>Explore my projects and learn more about me.</p>
+          <h1>Hello, I'm Corwin!</h1>
+          <p>Welcome to my website that I designed and programmed!</p>
           {/* Add more content as needed */}
         </div>
       </Container>
