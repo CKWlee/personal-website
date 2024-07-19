@@ -7,6 +7,8 @@ import Bio from './components/Bio';
 import Projects from './components/Projects';
 import RandomStuff from './components/RandomStuff';
 import Footer from './components/Footer'; // Import the Footer
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (

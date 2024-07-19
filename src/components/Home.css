@@ -13,3 +13,79 @@
   transform: scale(1.1); /* Scales up the text */
   color: #6f42c1; /* Change color on hover */
 }
+
+.carousel-header {
+  text-align: center;
+  margin-bottom: 60px; /* Increase space between header and carousel */
+}
+
+.carousel-container {
+  background-color: #f8f9fa; /* Match the homepage color */
+  height: 600px; /* Adjust the height as needed */
+  margin: 0 auto; /* Center the carousel horizontally */
+  position: relative;
+  padding: 20px; /* Add padding for spacing */
+  box-sizing: border-box; /* Ensure padding does not affect total width */
+}
+
+.carousel {
+  height: 100%; /* Ensure the carousel fills the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.carousel-item-content h3 {
+  font-size: 2.5rem; /* Adjust as needed */
+  margin-bottom: 1rem;
+}
+
+.carousel-item-content p {
+  font-size: 1.5rem; /* Adjust as needed */
+}
+
+/* Styling for carousel controls */
+.carousel-control-prev, .carousel-control-next {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  background: transparent; /* Make background transparent */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  display: none; /* Hide default icons */
+}
+
+.carousel-control-prev::before, .carousel-control-next::before {
+  content: ''; /* Required for pseudo-elements */
+  display: block;
+  width: 0; /* Adjust the width of the arrow */
+  height: 0; /* Adjust the height of the arrow */
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #000; /* Color of the left arrow */
+  position: absolute;
+  top: 500%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-next::before {
+  border-left: none;
+  border-right: 15px solid #000; /* Color of the right arrow */
+}
+
+.carousel-control-prev {
+  left: 10px; /* Adjust position */
+}
+
+.carousel-control-next {
+  right: 10px; /* Adjust position */
+}
