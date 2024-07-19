@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import './Home.css'; // Ensure this path is correct
 
 const Home = () => {
   return (

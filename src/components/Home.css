@@ -1,0 +1,15 @@
+.home-page h1,
+.home-page p {
+  font-weight: bold;
+}
+
+.home-page .text-center h1,
+.home-page .text-center p {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.home-page .text-center h1:hover,
+.home-page .text-center p:hover {
+  transform: scale(1.1); /* Scales up the text */
+  color: #6f42c1; /* Change color on hover */
+}
